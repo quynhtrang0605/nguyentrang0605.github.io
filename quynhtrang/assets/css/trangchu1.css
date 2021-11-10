@@ -1,0 +1,485 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+html{
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*HEADER*/
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#header__top .container-fluid {
+    display: block;
+}
+
+#header__top ul.nav.navbar-nav {
+    display: block;
+}
+
+img#logo {
+    width: 111px;
+    margin: -24px 0 0 27px;
+}
+
+#header__main .navbar{
+    background-color: #77ca64!important;
+    margin-top: -20px;
+    margin-bottom: 0;
+}
+
+#header__main form.d-flex {
+    margin-top: 8px;
+}
+
+/*FOOTER*/
+#footer {
+    position: relative;
+    top: 145px;
+}
+
+#footer .top-footer {
+    border-top: solid 1px #ebebeb;
+    border-bottom: solid 1px #ebebeb;
+}
+
+#footer ul {
+    line-height: 2;
+}
+
+/*TRANG CHỦ*/
+
+/* Slideshow container */
+#slider {
+    position: relative;
+    top: 125px;
+}
+
+/* Ẩn các slider */
+.mySlides {
+    display: none;
+}
+ 
+/* định dạng các chấm chuyển đổi các slide */
+.dot {
+    position: relative;
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease;
+    top: -45px;
+}
+
+/* khi được hover, active đổi màu nền */
+#slider .active, .dot:hover {
+  background-color: #717171;
+}
+ 
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+ 
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+ 
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+.mySlides img{
+  width: 100%;
+  height: 400px;
+}
+
+/*MAIN*/
+div#main {
+    position: relative;
+    top: 125px;
+}
+
+#product img {
+    width: 100%;
+    height: 370px;
+}
+
+#product{
+    position: absolute;
+    left: -56px;
+}
+
+.high1 {
+    position: relative;
+    top: 740px;
+}
+
+.highlight .col-md-3:hover, .box-detail-list-product .col-sm-4:hover{
+    border: 1px solid #736c6c;
+    box-shadow: 1px 1px 7px #333;
+}
+
+.highlight .col-md-3:hover i.ti-shopping-cart, 
+.box-detail-list-product .col-sm-4:hover i.ti-shopping-cart{
+    display: inline-block;
+    animation: modalFadeIn ease 2s;
+}
+
+.highlight .col-md-3 p, 
+.box-detail-list-product .col-sm-4 p{
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.highlight .col-md-3:hover p,
+.box-detail-list-product .col-md-3:hover p {
+    margin-top: -25px;
+}
+
+.highlight .col-md-3 img, 
+.box-detail-list-product .col-sm-4 img{
+    width: 100%;
+    height: 200px;
+}
+
+.highlight h6, 
+.box-detail-list-product h6{
+    position: relative;
+    right: -95px;
+}
+
+.highlight i.ti-shopping-cart, 
+.box-detail-list-product i.ti-shopping-cart {
+    border: 1px solid;
+    padding: 4px;
+    border-radius: 5px;
+    position: relative;
+    top: -121px;
+    display: none;
+    background: beige;
+}
+
+img.banner {
+    width: 100%;
+    position: relative;
+    top: 760px;
+}
+
+img.push {
+    margin-top: 33px;
+}
+
+.new {
+    position: relative;
+    top: 760px;
+    margin-bottom: 800px;
+}
+
+.trademark {
+    position: relative;
+    top: 17px;
+    margin-bottom: 27px;
+}
+
+ul.col-sm-12.col-xs-12.text-center.list-unstyled li img {
+    width: 100%;
+}
+
+.item-highlight.box-align-center {
+    border-right: 1px solid #bababa;
+}
+
+.max-width-300 {
+    max-width: 300px;
+}
+
+.item-highlight {
+    padding: 10px 15px 10px 70px;
+    position: relative;
+}
+
+.item-highlight i {
+    font-size: 48px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.item-highlight .title-highlight {
+    font-size: 17px;    
+}
+
+p.title-highlight {
+    color: #222222;
+    font-weight: bold;
+}
+
+.item-highlight p.desc-hl {
+    margin-bottom: 0;
+}
+
+p.desc-hl {
+    color: #f93a66;
+}
+
+/*DANH MỤC*/
+.dm {
+    position: relative;
+    top: -6px!important;
+}
+
+div#tweak {
+    margin-top: 140px;
+}
+
+#sidebar h3 {
+    background: #77ca64;
+    padding: 6px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.catalog1 ul li, .cost ul li{
+    line-height: 35px;
+}
+
+.cost ul li{ 
+    border: 1px solid lightgray;
+    border-radius: 13px;
+    margin-bottom: 5px;
+}
+
+.catalog1 ul li:hover, .cost ul li:hover{
+    background: #77ca64;
+}
+
+.catalog1 ul li a, .cost ul li a {
+    margin-left: 15px;
+}
+
+.catalog1 ul li a:hover, .cost ul li a:hover{
+    color: white!important;
+}
+
+.find, .cost, .checkbox {
+    margin-top: 20px;
+}
+
+ul#myUL {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.checkbox form input{
+    margin-left: 0px!important;
+}
+
+.sp {
+    position: relative;
+    top: 10px;
+    margin-bottom: 25px;
+}
+
+.box-detail-list-product .col-sm-4 img {
+    width: 89%!important;
+}
+
+.box-detail-list-product p {
+    margin-top: 11px;
+}
+
+.box-detail-list-product span{
+    font-size: 13px;
+}
+
+.box-detail-list-product .col-sm-4:hover p{
+    margin-top: -15px;
+}
+
+.foot {
+    top: 6px!important;
+}
+
+/*ÁO LIỀN*/
+.act{
+    color: green!important;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/*INTRO*/
+.intro a img {
+    width: 100%;
+    height: 265px;
+}
+
+.intro1 a img {
+    width: 100%;
+    height: 265px;
+    margin-top: 15px;
+}
+
+/*SHIP*/
+.content {
+    background: url('file:///C:/Users/User/OneDrive/Documents/Web/ShopBanHang/assets/img/img_trangchu/bg.jpg') top center / cover no-repeat;
+}
+
+/*CART*/
+.template-cart{
+    position: relative;
+    top: 0;
+}
+
+.table-cart, .table-cart th, .table-cart td {
+    border-collapse: collapse;
+    border: solid 1px #ebebeb;
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+.table-cart thead tr {
+    background: #f8f8f8;
+    font-size: 14px;
+}
+
+input.btn.btn-success.pull-right {
+    margin-right: 6px;
+}
+
+.total-cart p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.table-cart thead .name{
+    width: 30%;
+}
+
+.table-cart thead .price, 
+.table-cart thead .quantity, 
+.table-cart thead .price{
+    width: 15%;
+}
+
+.table-cart thead .image{
+    width: 20%;
+}
+
+.total-cart {
+    margin-bottom: 75px;
+}
+
+.trademark1{
+    top: 6px;
+}
+
+/*CONTACT*/
+.contact .col-md-4 {
+    border: 1px solid;
+    background: #77ca64;
+    color: white;
+}
+
+.contact .col-md-4  h4{
+    font-weight: bold;
+}
+
+.contact1{
+    margin-top: 20px;
+}
+
+/*ĐĂNG KÍ, ĐĂNG NHẬP*/
+.dki{
+    margin-top: 15px;
+}
+
+p.title {
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    text-transform: uppercase;
+    left: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.wrapper-form {
+    padding: 30px 30px 15px;
+    border-radius: 5px;
+    border: solid 1px #ebebeb;
+    position: relative;
+}
+
+#req{
+    color: red;
+}
+
+/*NEWS*/
+.t12 a img{    
+    width: 200%;
+    margin-left: -260px;
+    height: 500px;
+}
+
+.in2 {
+    height: 150px;
+    border: 1px solid #e5e5e5;
+    background: #77ca64;
+}
+
+.t12{
+    overflow: hidden;
+}
+
+.t12 img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 1.5s ease;
+    height: 100%;
+}
+
+.t12 a img:hover{
+    transform: scale(1.1);
+}
+
+img.img8 {
+    margin-left: -285px!important;
+}
+
+.news1{
+    margin-top: 20px;
+}
+
+.col-sm-12{
+    padding-right: 0!important;
+    padding-left: 0!important
+}

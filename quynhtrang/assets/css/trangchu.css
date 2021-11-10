@@ -1,0 +1,1475 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Common*/
+.col-full{
+    width: 100%;
+}
+
+.col-half{
+    width: 47%;
+    overflow: hidden;
+}
+
+
+.row {
+    position: relative;
+    top: 50px;
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row1 {
+    position: relative;
+    top: 90px;
+    width: 55%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    left: 33%;
+}
+
+.col-1 {
+    width: 32%;
+}
+
+.col-2 {
+    width: 66%;
+}
+
+.col-3{
+    width: 30%;
+    border-right: 1px solid lightgrey;
+}
+
+.col-4 {
+    width: 24%;
+}
+
+.col-43{
+    width: 29%;
+} 
+
+.col-12 {
+    width: 53%;
+}
+
+.align{
+    text-align: center;
+}
+
+.line-height{
+    line-height: 1.4;
+}
+
+.detail {
+    position: relative;
+    width: 55%;
+    top: 90px;
+    left: 33%;
+    margin-bottom: 290px;
+}
+
+.col__detail{
+    width: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.col__img{
+    width: 40%;
+}
+
+.col__intro {
+    width: 55%;
+    position: relative;
+    top: -405px;
+    left: 44%;
+}
+
+.col-md-6 {
+    width: 49%;
+}
+/*/Common*/
+
+/*Header*/
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 100;
+}
+
+#header__top {
+    height: 30px;
+    background: #77ca64;
+    width: 100%;
+    display: flex;
+    font-size: 13px;
+    position: fixed;
+}
+
+#header__top i.fa.fa-phone {
+    margin: 8px 17px -5px 151px;
+}
+
+#header__top i.ti-email {
+    line-height: 30px;
+}
+
+#header__top ul {
+    line-height: 30px;
+    margin-left: 750px;
+}
+
+#header__top ul li{
+    margin-right: 20px;
+}
+
+#header__main{
+    height: 68px;
+    background: #f3f3f3;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    top: 30px;
+    font-size: 13px;
+}
+
+#header__main input[type="text"] {
+    width: 45%;
+    margin: 19px 150px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #c0baba;
+}
+
+i.ti-search, i.ti-menu{
+    position: absolute;
+    top: 28px;
+    right: 415px;
+}
+
+#header__main i.ti-shopping-cart {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    right: 252px;
+    color: white;
+    background: #77ca64;
+    display: block;
+}
+
+#menu {
+    background: #77ca64;
+    position: absolute;
+    top: 98px;
+    width: 100%;
+    height: 55px
+}
+
+ul#nav {
+    margin: 0 auto;
+    width: 54%;
+}
+
+.subnav{
+    animation: modalFadeIn ease 1.5s;
+}
+
+@keyframes modalFadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+img#logo {
+    width: 111px;
+    margin: 0 0 0 150px;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #77ca64;
+    top: 55px;
+    width: 200px;
+    left: -25px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 8px 11px 20px rgb(60 55 55 / 30%);
+}
+
+#nav > li > a{
+    text-transform: uppercase;
+}
+
+#nav li a{
+    display: block;
+    padding: 18px 24px;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: #000!important;
+}
+
+#nav li a:hover, .subnav li a:hover{
+    background: white;
+}
+
+#nav .subnav a{
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+.mobile-menu-btn, .search-btn {
+    height: 46px;
+    width: 46px;
+    top: 0;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+.mobile-menu-btn:hover{
+    background: #ccc;
+    color: black;
+}
+
+i.ti-menu:hover{
+    color: black;
+}
+/*/Header*/
+
+/*Footer*/
+#footer {
+    position: relative;
+    top: 170px;
+    width: 100%;
+    text-align: center;
+}
+
+#footer .top-footer {
+    background-color: #fafafa;
+    border-top: solid 1px #ebebeb;
+    border-bottom: solid 1px #ebebeb;
+}
+
+.col-xs-12 {
+    width: 100%;
+}
+
+ul.list-unstyled {
+    display: block;
+    text-align: left;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.top-footer h3 {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+ul.list-unstyled li a:hover{
+    color: red;
+}
+
+.footer {
+    top: 14px;
+}
+/*/Footer*/
+
+/*TRANG CHỦ*/
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    top: 153px;
+    margin-bottom: 83px;
+}
+
+/* Ẩn các slider */
+.mySlides {
+    display: none;
+}
+ 
+/* định dạng các chấm chuyển đổi các slide */
+.dot {
+    position: relative;
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease;
+    top: 24px;
+}
+
+/* khi được hover, active đổi màu nền */
+.active, .dot:hover {
+  background-color: #717171;
+}
+ 
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+ 
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+ 
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+.mySlides img{
+  width: 100%;
+  height: 400px;
+}
+
+.col-1 img, .col-2 img {
+    width: 100%;
+}
+
+.product2{
+    top: 65px;
+}
+
+h2.pro__highlight {
+    position: relative;
+    top: 100px;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.highlight {
+    top: 120px;
+}
+
+.col-4:hover, .col-43:hover{
+    border: 1px solid #736c6c;
+    box-shadow: 1px 1px 7px #333;
+}
+
+.col-4 img {
+    width: 100%;
+    height: 80%;
+    background: aliceblue;
+    margin-top: -24px;
+}
+
+.spe:hover{
+    height: 325px; 
+}
+
+.col-4 p, .col-43 p {
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.col-4 p:hover, .col-43 p:hover{
+    color: rebeccapurple;
+}
+
+.col-4 span, .col-43 span{
+    font-size: 13px;
+    position: relative;
+    top: 8px;
+    color: red;
+    font-weight: bold;
+}
+
+.col-4 h6 {
+    background: red;
+    padding: 7px 7px;
+    width: 15%;
+    border-radius: 10px;
+    position: relative;
+    right: -196px;
+    top: 11px;
+    color: white;
+    z-index: 1;
+}
+
+i.ti-shopping-cart {
+    border: 1px solid;
+    padding: 4px;
+    border-radius: 5px;
+    position: relative;
+    top: -144px;
+    display: none;
+    background: beige;
+}
+
+.col-4:hover i.ti-shopping-cart, .col-43:hover i.ti-shopping-cart{
+    display: inline-block;
+    animation: modalFadeIn ease 1s;
+}
+
+.col-4:hover p, .col-43:hover p{
+    margin-top: -17px;
+}
+
+
+img.col-full {
+    margin-top: 140px;
+}
+
+h2.pro__new {
+    position: relative;
+    top: 20px;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.new {
+    margin-bottom: 17px;
+}
+
+.new img{
+    margin-top: 0;
+}
+
+.sp1 img {
+    top: 1px;
+    position: relative;
+}
+
+.spe1:hover{
+    height: 310px;
+}
+
+img.img7 {
+    top: -26px;
+    height: 82.8%;
+    position: relative;
+    margin-bottom: -26px;
+}
+
+.spe2:hover{
+    height: 297px;
+}
+
+.trademark a img {
+    padding: 0 11px;
+}
+
+h2.trade {
+    position: relative;
+    top: 75px;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.trademark {
+    top: 100px;
+}
+
+.infor {
+    top: 125px;
+}
+
+.col-3 i {
+    font-size: 40px;
+    position: relative;
+    top: 30px;
+    left: 13px;
+}
+
+.col-3 h3 {
+    font-size: 17px;
+    position: relative;
+    top: -25px;
+    left: 60px;
+}
+
+
+.col-3 span {
+    font-size: 14px;
+    position: relative;
+    top: -20px;
+    left: 60px;
+    color: red;
+}
+
+ul.sub {
+    position: relative;
+    top: 150px;
+    margin: 0 auto;
+    width: 31%;
+}
+
+.sub li {
+    padding: 8px 13px;
+} 
+
+.sub li:hover{
+    background: #77ca64;
+}
+/*/TRANG CHỦ*/
+
+/*DANH MỤC 1*/
+#tweak {
+    background: #45aa5a;
+    width: 100%;
+    height: 27px;
+    position: relative;
+    font-weight: bold;
+    color: white;
+    top: 153px;
+    font-size: 12px;
+    margin-bottom: 80px;
+}
+
+#tweak ul {
+    margin-left: 200px;
+    line-height: 29px;
+}
+
+#tweak ul li a{
+    color: black;
+}
+
+/*DANH MỤC 1*/
+.slidebar {
+    width: 17%;
+    height: auto;
+    position: relative;
+    top: 90px;
+    left: 13%;
+}
+
+.catalog1 {
+    width: 95%;
+    height: auto;
+    position: absolute;
+}
+
+.h3 {
+    background: deeppink;
+    padding: 6px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.catalog1 ul {
+    display: block;
+}
+
+.catalog1 ul li {
+    font-size: 17px;
+    line-height: 40px
+}
+
+.catalog1 ul li:hover{
+    background: #e8e6e6;
+}
+
+.catalog1 ul li a {
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.find {
+    width: 95%;
+    height: auto;
+    position: absolute;
+    top: 285px;
+}
+
+.find input {
+    padding: 6px 66px 6px 10px;
+    border-radius: 7px;
+    margin-top: 8px;
+}
+
+.cost {
+    width: 95%;
+    height: auto;
+    position: absolute;
+    top: 385px;
+}
+
+#myInput {
+    font-size: 13px;
+    padding: 6px 66px 6px 10px;
+    border: 1px solid #ddd;
+    margin: 6px 0;
+    border-radius: 5px;
+}
+
+#myUL {
+    display: block;
+}
+
+#myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #77ca64;
+    color: white;
+}
+
+.checkbox {
+    width: 95%;
+    height: auto;
+    position: absolute;
+    top: 605px;
+}
+
+.checkbox form {
+    margin-left: 17px;
+    margin-top: 12px;
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin: 10px 0 0 50px;
+}
+
+.col-43 img {
+    width: 100%;
+    height: 80%;
+    background: aliceblue;
+}
+
+.col-43 h6 {
+    background: red;
+    padding: 7px 7px;
+    width: 15%;
+    border-radius: 10px;
+    position: relative;
+    right: -181px;
+    top: 11px;
+    color: white;
+    z-index: 1;
+}
+
+.spe3:hover{
+    height: 335px;
+}
+
+.spe3 img, .spe9 img, .spe10 img, .spe11 img, .spe14 img {
+    top: -25px;
+    position: relative;
+}
+
+.spe3 p {
+    top: -28px;
+    position: relative;
+}
+
+.spe3 span {
+    top: -17px;
+    position: relative;
+}
+
+.spe3 i {
+    top: -173px;
+}
+
+.product3 {
+    margin-bottom: 17px;
+}
+
+.spe4:hover{
+    height: 275px;
+}
+
+.spe4 i {
+    top: -131px;
+}
+
+.spe5:hover{
+    height: 283px;
+}
+
+.button {
+    display: flex;
+    position: relative;
+    top: 130px;
+    left: 500px;
+}
+
+.button a {
+    padding: 8px 13px;
+}
+
+.button a:hover {
+    background-color: yellowgreen;
+    color: black;
+}
+
+.previous, .next {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.round1{
+    background: red;
+    border-radius: 50%;
+}
+
+.trademark1 {
+    top: 160px;
+    margin-bottom: 35px;
+}
+/*/DANH MỤC 1*/
+
+/*DANH MỤC 2*/
+.spe5:hover{
+    height: 283px;
+}
+
+.spe6:hover{
+    height: 291px;
+}
+
+.spe7:hover{
+    height: 283px;
+}
+
+.spe7 i{
+    top: -131px;
+}
+
+.spe8:hover{
+    height: 297px;
+}
+
+.spe8 span, span.span4, span.span17, span.span7 {
+    top: 2px;
+}
+/*/DANH MỤC 2*/
+
+/*DANH MỤC 3*/
+.spe5:hover{
+    height: 283px;
+}
+
+.spe6:hover{
+    height: 291px;
+}
+
+.spe7:hover{
+    height: 283px;
+}
+
+.trademark2 {
+    top: 575px;
+    margin-bottom: 450px;
+}
+/*/DANH MỤC 3*/
+
+/*ÁO LIỀN*/
+a.aolien {
+    color: red;
+}
+
+.spe9 p, .spe10 p, .spe14 p {
+    top: -26px;
+    position: relative;
+}
+
+.spe9 span, .spe10 span, .spe11 span, .spe14 span {
+    top: -20px;
+}
+
+.spe9 i, .spe10 i {
+    top: -155px;
+}
+/*/ÁO LIỀN*/
+
+/*PIJAMA*/
+.spe10:hover{
+    height: 303px;
+}
+/*/PIJAMA*/
+
+/*INTRO*/
+.intro1 {
+    top: 105px;
+    margin-bottom: 101px;
+}
+
+.intro1 img {
+    width: 400px;
+    margin-right: 25px;
+}
+
+.row strong {
+    color: #2183ab;;
+}
+
+.text{
+    text-align: justify;
+}
+
+.intro2 img {
+    width: 100%;
+}
+
+.intro3 {
+    display: inline;
+    left: 15%;
+    top: 80px;
+}
+
+.intro3 p {
+    width: 70%;
+}
+
+.intro3 ul{
+    display: inline;
+    text-indent: 25px;
+}
+/*/INTRO*/
+
+/*DOITRA*/
+img.bg {
+    width: 100%;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 75px;
+    background: url('file:///C:/Users/User/OneDrive/Documents/Web/Shop/assets/img/img_trangchu/bg.jpg') top center / cover no-repeat;
+}
+
+.text2 {
+    margin: 0 27px;
+    text-align: justify;
+}
+/*/DOITRA*/
+
+/*SHIP*/
+table.align {
+    width: 85%;
+    margin: 0 auto;
+}
+/*/SHIP*/
+
+/*RECRUITMENT*/
+h2.h2.align {
+    position: relative;
+    top: 100px;
+}
+
+.rec {
+    top: 120px;
+    margin-bottom: 50px;
+}
+
+.t11, .t12{
+    overflow: hidden;
+}
+
+.col-half img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 1.5s ease;
+    height: 100%;
+}
+
+.col-half img:hover, .t12 a img:hover{
+    transform: scale(1.2);
+}
+
+.in1 {
+    position: relative;
+    top: 2px;
+    height: 120px;
+    border: 1px solid #e5e5e5;
+    background: beige;
+}
+
+.in1 a h2:hove, .in2 a h2:hover{
+    color: skyblue;
+}
+
+.in1 p, .in2 p {
+    font-size: 14px;
+    margin: 15px 0 0 20px;
+}
+
+.in1 a span {
+    top: 80px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 14px;
+    color: skyblue;
+    left: 200px;
+}
+/*/RECRUITMENT*/
+
+/*NEWS*/
+.t12 a img{    
+    width: 220%;
+    margin-left: -285px;
+    height: 500px;
+}
+
+img.img8 {
+    position: relative;
+    left: -35px;
+}
+
+.in2 {
+    position: relative;
+    top: 2px;
+    height: 150px;
+    border: 1px solid #e5e5e5;
+    background: beige;
+}
+
+.in2 a span {
+    top: 105px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 14px;
+    color: skyblue;
+    left: 200px;
+}
+/*/NEWS*/
+
+/*ADDRESS*/
+.contact1 {
+    position: relative;
+    top: 155px;
+    margin-bottom: 150px;
+}
+
+.box {
+    border: 1px solid;
+    padding: 15px;
+    width: 30%;
+    background: aliceblue;
+}
+
+.box h3 {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.box p {
+    font-size: 14px;
+}
+
+.box i {
+    background: #36bcb1;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+/*/ADDRESS*/
+
+/*vay-da*/
+.box1 {
+    width: 100%;
+    border: 1px solid wheat;
+    margin-bottom: 12px;
+}
+
+.col__img img{
+    width: 100%;
+}
+
+#vayda {
+    width: 100%;
+    height: 300px;
+}
+
+.choose {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.choose img{
+    width: 23%;
+    border: 1px solid wheat;
+}
+
+.col__detail ul {
+    display: inherit;
+    margin: 15px 0 15px 17px;
+    list-style: circle;
+}
+
+.col__intro h2 {
+    font-size: 20px;
+}
+
+.col__intro p {
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+.col__intro b {
+    position: relative;
+    top: 8px;
+    color: red;
+}
+
+.color {
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+.color {
+    border-radius: 10px;
+    width: 85px;
+    height: 30px;
+    margin-bottom: 17px;
+}
+
+#hong1{
+    background: pink;
+}
+
+#xanh1{
+    background: skyblue;
+}
+
+#do1{
+    background: red;
+}
+
+#vang1{
+    background: yellow;
+}
+
+input#quantity {
+    width: 35px;
+    text-align: center;
+    height: 35px;
+}
+
+input[type="button"]:hover{
+    background: red;
+    color: white;
+}
+
+input[type="button"] {
+    width: 35px;
+    height: 35px;
+}
+
+.col__intro i {
+    top: 3px;
+    display: inline-block;
+    border: none;
+    background: no-repeat;
+}
+
+.col__intro a {
+    background: red;
+    padding: 8px 17px;
+    border-radius: 15px;
+    margin-left: 17px;
+    color: white;
+}
+
+.js {
+    position: relative;
+    top: -272px;
+    width: 100%;
+    text-align: justify;
+}
+
+.tabs {
+  display: flex;
+  position: relative;
+}
+
+.tabs .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  border-radius: 15px;
+  background-color: #c23564;
+  transition: all 0.2s ease;
+}
+
+.tab-item {
+  min-width: 80px;
+  padding: 16px 20px 11px 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #c23564;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 5px solid transparent;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.tab-icon {
+  font-size: 24px;
+  width: 32px;
+  position: relative;
+  top: 2px;
+}
+
+.tab-item:hover {
+  opacity: 1;
+  background-color: rgba(194, 53, 100, 0.05);
+  border-color: rgba(194, 53, 100, 0.1);
+}
+
+.tab-item.active {
+  opacity: 1;
+}
+
+.tab-content {
+  padding: 28px 0;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+  background: none;
+}
+
+
+.tab-pane ul {
+    display: block;
+    list-style: circle;
+}
+
+table.des__highlight {
+    width: 100%;
+}
+
+table.des__highlight td{
+    width: 50%;
+}
+
+.tab-pane input[type="text"] {
+    width: 100%;
+    padding: 8px 0 8px 10px;
+    margin-bottom: 10px;
+}
+
+.tab-pane a {
+    font-size: 15px;
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+h2.pro__same {
+    position: relative;
+    top: -245px;
+}
+
+.same {
+    top: -210px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.same img {
+    margin-top: 0px;
+}
+
+.spe11:hover {
+    height: 315px;
+}
+
+.spe11 p {
+    top: -24px;
+    position: relative;
+}
+
+.spe13:hover{
+    height: 242px;
+}
+
+.spe13 span, .spe15 span{
+    top: 4px;
+}
+
+.spe14:hover{
+    height: 263px;
+}
+
+.spe14 i.ti-shopping-cart {
+    top: -141px;
+}
+
+.same .ti-shopping-cart {
+    top: -115px;
+}
+
+.trademark3 {
+    top: -375px;
+    margin-bottom: -490px;
+}
+/*/vay-da*/
+
+/*gau*/
+#nauden1{
+    background: #5a281f;
+    color: white;
+}
+
+#nau1{
+    background: #af9a88;
+    color: white;
+}
+
+.spe12:hover {
+    height: 307px;
+}
+
+.spe15:hover{
+    height: 240px;
+}
+/*/gau*/
+
+/*dangnhap*/
+.template-customer, .template-cart {
+    position: relative;
+    top: 153px;
+    margin-bottom: 155px;
+}
+
+.template-customer h2{
+    margin: 15px 0;
+}
+
+.template-customer .wrapper-form {
+    padding: 30px 30px 15px;
+    border-radius: 5px;
+    border: solid 1px #ebebeb;
+    position: relative;
+}
+
+.template-customer .wrapper-form .title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -10px;
+    text-transform: uppercase;
+    left: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.login{
+    overflow: inherit;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.template-customer .input-control {
+    width: 100%;
+    background-color: #fafafa;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.input-control {
+    border: solid 1px #e1e1e1;
+    outline: none;
+    padding: 10px;
+        width: 80%;
+}
+
+#req {
+    color: red;
+}
+
+.template-customer .button1 {
+    background-color: #77ca64;
+    border-radius: 3px;
+    padding: 12px 20px;
+    color: white;
+    font-size: 14px;
+    margin: -6px 0 0 -3px;
+        border: none;
+}
+
+p.dk {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.form1{
+    height: 151px;
+}
+/*/dangnhap*/
+
+/*cart*/
+.table-cart, .table-cart th, .table-cart td {
+    border-collapse: collapse;
+    border: solid 1px #ebebeb;
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+.table-cart {
+    font-weight: 400 !important;
+    margin-top: 30px;
+}
+
+.table-cart thead tr {
+    background: #f8f8f8;
+    font-size: 14px;
+}
+
+.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
+    border-top: 0;
+}
+.table-cart thead .image {
+    width: 20%;
+}
+
+.table-cart thead .name {
+    width: 20%;
+}
+
+.table-cart thead .price, .table-cart thead .quantity {
+    width: 15%;
+}
+
+.index .image {
+    text-align: center;
+}
+
+.table-cart thead tr th, .table-cart tbody tr td {
+    padding: 15px 25px;
+}
+
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+
+img.img-responsive {
+    width: 100%;
+}
+
+.button2 {
+    background: #77ca64;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin: 8px;
+    font-size: 14px;
+}
+
+a.button3.black {
+    background: #464646;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px;
+    border-radius: 6px;
+    float: right;
+}
+
+input.button.pull-right {
+    position: relative;
+    left: 0px;
+    top: -2px;
+    background: #77ca64;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+}
+
+.total-cart p{
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    top: 12px;
+    text-align: right;
+}
+/*/cart*/
+
+
